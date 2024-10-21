@@ -1,0 +1,472 @@
+/* .admin-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-y: scroll;
+  }
+  
+  .admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4e1db;
+  }
+  
+  .greeting {
+    font-size: 2.5rem;
+    color: #5b4636;
+  }
+  
+  .admin-name {
+    font-size: 2.2rem;
+    color: #d45926;
+  }
+  
+  .admin-top-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-icon {
+    background-color: #d45926;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .bell-icon {
+    font-size: 1.5rem;
+  }
+  
+  .admin-dashboard {
+    padding: 20px;
+    flex: 1; 
+  }
+  
+  .metrics-dashboard {
+    background-color: #e7e7e7;
+    padding: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .task-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .task-card {
+    flex: 1 1 calc(33.33% - 20px);
+    padding: 30px;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 8px;
+  }
+  
+  .purple {
+    background-color: #8e44ad;
+  }
+  
+  .blue {
+    background-color: #2980b9;
+  }
+  
+  .light-blue {
+    background-color: #3498db;
+  }
+  
+  .green {
+    background-color: #27ae60;
+  }
+  
+  .orange {
+    background-color: #e67e22;
+  }
+  
+  .red {
+    background-color: #e74c3c;
+  }
+  
+  .admin-footer {
+    background-color: #d45926;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  .canmanage-footer {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+  } */
+
+
+
+/**/
+/* Second try/*
+/* Admin container layout */
+/* .admin-container {
+    background: linear-gradient(180deg, rgba(240, 170, 100, 1), rgba(240, 209, 188, 1));
+    min-height: 100vh;
+    overflow-y: auto;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.header {
+    background-color: #f5e7dc;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.greeting {
+    font-size: 2.5rem;
+}
+
+.username {
+    font-size: 2rem;
+    color: #e3672b;
+}
+
+
+.profile-icons {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-icon, .notification-icon {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+
+.key-metrics {
+    width: 90%;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #e6e6e6;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+.admin-btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+}
+
+.admin-btn .btn {
+    flex-basis: 45%;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6c63ff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    border: none;
+    transition: transform 0.2s;
+}
+
+.admin-btn .btn:hover {
+    transform: scale(1.05);
+}
+
+.user-management {
+    background-color: #a273eb; 
+}
+
+.inventory-management {
+    background-color: #5a8dee; 
+}
+
+.feedback-support {
+    background-color: #8fbcdc; 
+}
+
+.order-history {
+    background-color: #63c176; 
+}
+
+.staff-attendance {
+    background-color: #e89146; 
+}
+
+.reports-analytics {
+    background-color: #dc5b47; 
+}
+
+
+.footer {
+    text-align: center;
+    background-color: rgba(224, 144, 82, 1);
+    padding: 10px;
+}
+
+.footer p {
+    color: white;
+    margin: 0;
+} */
+ 
+/*Third Try*/
+
+.whole {
+  /* background-color: #db3406; */
+  display: flex;
+  height: 100vh;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 15px 20px;
+  /* z-index: 100;  */
+  box-sizing: border-box;
+}
+
+.left-section .logo {
+  font-family: 'Dancing Script'; /* The font you are using for CanManage */
+  font-size: 24px;
+  color: white;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+}
+
+.right-section .organization-name,
+.right-section .admin-name {
+  font-size: 16px;
+  color: white;
+  margin-left: 10px;
+}
+
+.right-section .dot {
+  margin: 0 8px;
+  font-size: 20px;
+  color: white;
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.menu-items .btn.selected {
+  background-color: #c12d06; /* Darker shade for the selected button */
+  color: white;
+}
+
+.menu-items .btn.selected i {
+  color: white; /* Icon color change when selected */
+}
+
+.leftpane {
+  width:250px;
+  background-color: #db3406;
+  color: white;
+  margin-top: 70px;
+  transition: width 0.3s;
+}
+
+.leftpane.collapsed {
+  width: 60px;
+}
+
+.hamburger {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.menu-items {
+  margin-top: 20px;
+}
+
+.menu-items .btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  background: none;
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: left;
+  cursor: pointer;
+  height: 60px;
+  font-size: 16px;
+  /* padding: 15px 20px; */
+}
+
+.menu-items .btn i {
+  display: block;
+  margin-right: 10px;
+  width: 24px;
+  transition: margin 0.3s;
+}
+
+.menu-items .btn .text {
+  display: inline-block;
+  transition: opacity 0.3s;
+  margin-left: 10px;
+}
+
+.menu-items .btn:hover {
+  background-color: #c12d06;
+}
+
+.mainpane {
+  flex: 1;
+  padding: 20px;
+  /* margin-top: 20px; */
+  margin-top: 70px;
+  margin-left: 90px;
+  transition: margin-left 0.3s;
+}
+
+.menu-items .btn span.text {
+  transition: display 0s 0.3s, opacity 0.3s ease; /* Display after opacity change */
+  opacity: 1;
+}
+
+.leftpane.collapsed .btn span.text {
+  opacity: 0;
+  display: none; /* Ensures text doesn't take up space */
+  transition: display 0s 0.3s; /* Delay display removal after the transition */
+}
+
+.leftpane .btn span.text {
+  display: inline-block; /* Show when pane is expanded */
+}
+
+.leftpane.collapsed .menu-items .btn .text {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.leftpane.collapsed .menu-items .btn i {
+  margin-right: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.leftpane.collapsed + .mainpane {
+  margin-left: 60px;
+}
+
+.welcome {
+  margin: 60px;
+}
+
+.greet {
+  font-family: Fenix;
+  font-weight: lighter;
+  font-size: 300%;
+}
+
+.name {
+  font-family: Fenix;
+  font-weight: lighter;
+  font-size: 300%;
+  color: #db3406;
+}
+
+.dashboard {
+  margin: 60px;
+  height: 400px;
+  /* width:fit-content; */
+  border: 1px solid;
+}
+
+/*Profile Dropdown*/
+.profile-dropdown {
+  position: absolute;
+  top: 60px; /* Adjust based on your header height */
+  right: 20px; /* Align it to the right */
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 10px;
+  z-index: 10;
+}
+
+.profile-dropdown button {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  text-align: left;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.profile-dropdown button:hover {
+  background-color: #f2f2f2; /* Slight highlight on hover */
+}
+/* .buttons {
+  display: grid;
+  margin: 60px;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+
+.btn {
+  border: 4px solid #db3406; 
+  border-radius:5px;
+  height: 80px;
+  width: 250px;
+  color: #db3406;
+  background-color: white;
+  font-weight: 700;
+  font-size: 16px;
+  
+  text-align:center;
+} */
+/* .user {
+  color: ;
+} */
+
+

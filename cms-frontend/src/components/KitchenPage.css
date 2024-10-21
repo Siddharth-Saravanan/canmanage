@@ -1,0 +1,230 @@
+/* Container */
+.kitchen-container {
+    display: flex;
+    max-width: 100%;
+    height: 100vh;
+}
+
+/* Header */
+.headers {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(14, 121, 215);
+    color: white;
+    padding: 15px 20px;
+    box-sizing: border-box;
+}
+
+.headers .logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+    color: white;
+}
+
+.right-section1 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.right-section1 .dot {
+    color: white;
+    margin: 0 5px;
+}
+
+.profile-icon1 {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Left Pane */
+.left-pane {
+    background-color: #cc5500;
+    margin-top: 70px;
+    color: white;
+    width: 240px;  /* Full width when expanded */
+    padding: 20px 0;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: width 0.3s ease;  /* Smooth transition for width change */
+}
+
+.left-pane.collapsed {
+    width: 60px;  /* Width when collapsed */
+}
+
+.hamburger {
+    position: relative;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.hamburger img {
+    width: 30px;
+    height: 30px;
+}
+
+.left-pane ul {
+    width: 100%;
+    padding: 0;
+}
+
+.left-pane ul li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.left-pane ul li:hover {
+    background-color: #ff6a00;
+}
+
+.left-pane ul li.selected {
+    background-color: #ff8c42;
+}
+
+.left-pane ul li img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 240px;
+    padding: 20px;
+    width: calc(100% - 240px);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Greeting Section */
+.greeting-section {
+    text-align: left;
+    margin-top: 70px;
+    padding-left: 20px;
+    background-color:#f9f9f9;
+}
+
+.greeting-section h1 {
+    font-family: Fenix;
+    font-weight: lighter;
+    font-size: 300%;
+    color: #333;
+}
+
+/* Content Container for Form and Table */
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Form Section */
+.form-section {
+    flex: 1;  /* Ensure it takes up equal space with the table */
+    margin-top: 50px;
+}
+
+.item-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-input, .form-select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.submit-btn {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Table Section */
+.table-section {
+    flex: 1;  /* Ensure it takes up equal space with the form */
+    margin-top: 50px;
+}
+
+.items-table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-y: scroll;
+}
+
+.items-table input.form-input {
+    width: 89%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.items-table th, .items-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.items-table th {
+    background-color: #f2f2f2;
+}
+
+.items-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.delete-btn {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: darkred;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+
+
+  

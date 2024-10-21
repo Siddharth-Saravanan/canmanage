@@ -1,0 +1,149 @@
+/* Background and layout */
+.login-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0 10%;
+    background: url('../images/logincanteen4.png') no-repeat center center;
+    background-size: cover;
+}
+
+/* Styling for tagline */
+.tagline {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    z-index: 10;
+}
+
+.tagline h1 {
+    font-size: 5.5em;
+    font-weight: bold;
+    font-family: 'Dancing Script';
+    color: rgb(224, 186, 89);
+}
+
+.tagline p {
+    font-family: "Kaushan Script";
+    font-size: 1.5em;
+}
+
+.tagline strong {
+    font-family: "Knewave";
+    color: #ed3e38;
+    font-size: 1.5em;
+}
+
+/* Styling for login box */
+.login-box {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    background: rgba(238, 232, 232, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    width: 400px;
+}
+
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-box input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-box button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background-color: #c9302c;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.links a {
+    color: #021217;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Contact us section */
+.contact-us {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-us a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.contact-us a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    .login-box {
+        width: 80%;
+        top: 55%;
+        right: 10%;
+        left: 10%;
+        transform: translateY(-50%);
+    }
+
+    .tagline {
+        top: 10%;
+        left: 5%;
+        right: 5%;
+        text-align: center;
+    }
+
+    .tagline h1 {
+        font-size: 3.5em;
+    }
+
+    .tagline p {
+        font-size: 1.2em;
+    }
+
+    .tagline strong {
+        font-size: 1.2em;
+    }
+
+    .contact-us {
+        margin-top: 30px;
+        font-size: 0.9em;
+    }
+}
+

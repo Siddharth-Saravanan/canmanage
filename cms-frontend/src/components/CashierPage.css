@@ -1,0 +1,202 @@
+/* Container */
+.cashier-container {
+    display: flex;
+    max-width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+/* Header */
+.headers {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(14, 121, 215);
+    color: white;
+    padding: 15px 20px;
+    box-sizing: border-box;
+}
+
+.headers .logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+    color: white;
+}
+
+.right-section1 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.right-section1 .dot {
+    color: white;
+    margin: 0 5px;
+}
+
+.profile-icon1 {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Left Pane */
+.left-pane {
+    background-color: #cc5500;
+    margin-top: 70px;
+    color: white;
+    width: 240px;  /* Full width when expanded */
+    padding: 20px 0;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: width 0.3s ease;  /* Smooth transition for width change */
+}
+
+.left-pane.collapsed {
+    width: 60px;  /* Width when collapsed */
+}
+
+.hamburger {
+    position: relative;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Updated styles for left pane buttons */
+.left-pane ul {
+    width: 100%;
+    padding: 0;
+}
+
+.left-pane ul li {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.left-pane ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 12px 20px;
+    width: 90%;
+    text-align: center;
+    background-color: #ff8c42;  /* Button background */
+    border-radius: 8px;
+    font-weight: bold;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.left-pane ul li a:hover {
+    background-color: #ff6a00;  /* Hover background color */
+}
+
+.left-pane ul li.selected a {
+    background-color: #cc5500;  /* Background when selected */
+}
+
+/* Main Content */
+.main-content {
+    flex-grow: 1;
+    margin-left: 240px;
+    margin-top: 70px;
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+}
+
+.left-pane.collapsed + .main-content {
+    margin-left: 60px;
+}
+
+.home-section, .create-order-section, .order-history-section {
+    padding: 20px;
+    background-color: white;
+}
+
+/* Create Order Section */
+.create-order-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px; /* Space between Available Items and Order Summary */
+    padding: 20px;
+}
+
+.items-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.items-table th, .items-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.items-table th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.items-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Order Summary Styling */
+.order-summary {
+    flex-grow: 1;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.order-summary ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.order-summary li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.order-summary h3 {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Button Styles */
+.submit-btn {
+    background-color: rgb(14, 121, 215);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: rgb(10, 85, 150);
+}
+

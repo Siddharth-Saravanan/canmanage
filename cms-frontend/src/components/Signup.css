@@ -1,0 +1,86 @@
+/* Background and layout for signup */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../images/logincanteen4.png') no-repeat center center;
+    background-size:cover;
+    padding: 0 20px;
+  }
+  
+  .signup-box {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    width: 400px;
+  }
+
+  .signup-box h1.brand-name {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-family: 'Dancing Script', cursive; /* For a more elegant font */
+    font-weight:bolder;
+    color: #d9534f; /* You can change this to match your theme */
+  }
+  
+  .signup-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .signup-box input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .signup-box button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+  
+  .signup-box button:hover {
+    background-color: #4cae4c;
+  }
+  
+  .links {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .links a {
+    color: #5cb85c;
+    text-decoration: none;
+  }
+  
+  .links a:hover {
+    text-decoration: underline;
+  }
+  
+  .warning {
+    color: red; /* Text color for warnings */
+    font-size: 12px; /* Adjust the size as needed */
+    margin-top: -20px; /* Space between the input and the warning */
+    display: block; /* Ensure it's displayed as a block below the input */
+  }
+  
+  /* Optional: Style the input fields when they have an error */
+  input.error {
+    border: 1px solid red; /* Red border to indicate error */
+    background-color: #ffe6e6; /* Light red background for better visibility */
+  }
+  
